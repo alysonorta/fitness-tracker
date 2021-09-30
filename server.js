@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/glacial-castle-
 });
 
 // routes
-app.use(require("./Develop/routes/api.js"));
+app.use(require("../fitness-tracker/Develop/routes/api"));
 // app.use(require('./routes/view.js'));
 
 app.listen(PORT, () => {
